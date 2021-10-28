@@ -257,7 +257,7 @@ const Bfake = fs.readFileSync ('./media/image/fake.jpeg','base64')
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`media/odc.jpeg`),"itemCount":2021,"status":"INQUIRY","surface":"CATALOG","message":`STATUS PESANAN :DI PROSES\n${groupMetadata.subject}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`image/odc.jpeg`),"itemCount":2021,"status":"INQUIRY","surface":"CATALOG","message":`STATUS PESANAN :DI PROSES\n${groupMetadata.subject}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 
 const d1 = (teks) => {
             ikyy.sendMessage(from, teks, text, {
@@ -266,7 +266,7 @@ const d1 = (teks) => {
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`media/odc.jpeg`),"itemCount":2021,"status":"INQUIRY","surface":"CATALOG","message":`STATUS PESANAN :DONE\n${groupMetadata.subject}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`image/odc.jpeg`),"itemCount":2021,"status":"INQUIRY","surface":"CATALOG","message":`STATUS PESANAN :DONE\n${groupMetadata.subject}`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 
 const verif = (teks) => {
         ikyy.sendMessage(from, teks, text, {
@@ -278,15 +278,8 @@ remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "ht
 
 }
 
-let ikyads = await getBuffer (`https://telegra.ph/file/6776d58cca6fe933452bf.jpg`)
- let fakeLink = {
-             "title": `Hai Kak ${pushname}`,
-             "body": `${timuu}`,
-             "previewType": "VIDIO",
-             "thumbnail": fs.readFileSync(`media/Menu.jpg`),
-             "mediaUrl": "https://youtu.be/7BqlUxaWXKs"
-        } 
-       let d = new Date
+let ikyads = await getBuffer (`https://telegra.ph/file/d03816c0c52b2cfeb3259.jpg`)
+        let d = new Date
        let locale = 'id'
        let gmt = new Date(0).getTime() - new Date('1 January 1970').getTime()
      let weton = ['Pahing', 'Pon','Wage','Kliwon','Legi'][Math.floor(((d * 1) + gmt) / 84600000) % 5]
@@ -307,6 +300,15 @@ let ikyads = await getBuffer (`https://telegra.ph/file/6776d58cca6fe933452bf.jpg
         options
       );
     };
+    
+    let fakeLink = {
+             "title": `Hai Kak ${pushname}`,
+             "body": `${timuu}`,
+             "previewType": "VIDIO",
+             "thumbnail": fs.readFileSync(`media/Menu.jpg`),
+             "mediaUrl": "https://youtu.be/7BqlUxaWXKs"
+        } 
+
         
         // here button function
         selectedButton = (type == 'buttonsResponseMessage') ? mek.message.buttonsResponseMessage.selectedButtonId : ''
@@ -1290,19 +1292,18 @@ res = await ikyy.prepareMessageFromContent(from,{
 "productId": "0",
 "title": `LIST MENU ${botName}`,
 "description": menuhe,
-"footerText": `${botName}`,
+"footerText": `bot by ${ownerName}`,
 "currencyCode": "IDR",
 "priceAmount1000": "0",
 "productImageCount": 1
 },
 "businessOwnerJid": `${ownerNumber}`,
 }
-}, {quoted: freply, mimetype: 'media/odc.jpeg', contextInfo:{externalAdReply: fakeLink }}) 
+}, {quoted: freply, mimetype: 'image/Menu.jpg', contextInfo:{externalAdReply: fakeLink }}) 
 
 ikyy.relayWAMessage(res)
 }
 break
-               
                    // Random Text //
                 case 'quotes':
                     quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=${setting.lolkey}`)
@@ -3164,11 +3165,50 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'buypremium':
        case 'sewabot':
        case 'iklan':
-      gopeynya = 'https://telegra.ph/file/6776d58cca6fe933452bf.jpg'
-     teksnya = `1. Mingguan : 5.000
-2. Bulanan : 7.000
-3. Permanen : 10.000
-Free bot respon menu store + bot respon name and date`
+      gopeynya = 'https://telegra.ph/file/eb68a858b3277ece55fba.jpg'
+     teksnya = `╭──「🇸 🇪 🇼 🇦  🇧 🇴 🇹 」
+│❏  1 MINGGU : IDR 4.000 (4K)
+│❏  1 BULAN : IDR 6.000 (6K)
+│❏   PERMANEN : IDR10.000 (10K)
+╰────
+╭─ [ KELEBIHAN BOT ]
+│❏  ＯＮ 24 ＪＡＭ
+│❏  WELCOME IMAGE
+│❏  FITUR LANGKA
+╰────
+╭─[ KEUNTUNGAN ]
+│❏  ANTI LINK ( AUTO KICK )
+│❏  WELCOME ( OTOMATIS )
+│❏  DAN RATUSAN FITUR LAINYA
+╰────
+╭─[ *MINAT CHAT* ]
+│❏  🪀 wa.me/6283866834781?text=sewa+bot
+╰────
+╭─[ *PAYMENT* ]
+│❏  BCA
+│❏  GOPAY
+│❏  DANA
+│❏  PULSA +10K
+│❏  QRIS ALL PAYMENT
+╰────
+
+
+//// *JADI OWNER BOT* \\\\
+-BUYER TINGGAL SCAN NANTI LANGSUNG JADI BOT
+-BISA OPEN JASA SEWA BOT
+-BOT ON 24 JAM
+-HARGA? 30K, NEGO? KE wa.me/6283866834781?text=mau+jadi+owner+bot
+
+/// *JADI MURID BOT* \\\
+-DI KASIH BAHAN²
+-DI AJARIN SAMPE BISA!
+-testi di ajarin sampe bisa? Ada
+-HARGA? 15K, wa.me/6283866834781?text=join+murid+bot
+
+*_TESTI ADA SEMUA!_*  *_TESTI ADA SEMUA!_*
+*_TESTI ADA SEMUA!_* *_TESTI ADA SEMUA!_*
+*_TESTI ADA SEMUA!_* *_TESTI ADA SEMUA!_*
+*_TESTI ADA SEMUA!_* *_TESTI ADA SEMUA!_*`
 
               ikyy.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya })
               break
@@ -5907,28 +5947,13 @@ case 'caripesan':  //by ANU TEAM
              reply(`Format salah tod, ini contoh format yang benar : ${prefix + command} halo|10`)
 }
              break
-case 'cekapikey':
-case 'lolkey':
-
-
-
-if (args.length < 1) return reply(`Ketik ${prefix}lolkey [Apikeynya]`) 
-
-
-
- anu = await fetchJson(`http://Api.lolhuman.xyz/api/checkapikey?apikey=${q}`)
-
-
-
-  teks = `*YOUR APIKEY*\n\n➸ Ussername= ${anu.result.username}\n➸ Request= ${anu.result.requests}\n➸ Today= ${anu.result.today}\n➸ Akun Type= ${anu.result.account_type}\n➸ Expired= ${anu.result.expired}\n➸ API = http://Api.lolhuman.xyz`
-
-
-
-  ikyy.sendMessage(from, teks, text, {quoted: freply})
-break
-
-
-  break
+       case 'lolkey':
+       case 'cekapikey':
+              if (args.length < 1) return reply(`Ketik ${prefix}lolkey [Apikeynya]`) 
+              anu = await fetchJson(`https://lolhuman.herokuapp.com/api/checkapikey?apikey=${q}`)
+              teks = `*YOUR APIKEY*\n\n➸ Ussername= ${anu.result.username}\n➸ Request= ${anu.result.requests}\n➸ Today= ${anu.result.today}\n➸ Akun Type= ${anu.result.account_type}\n➸ Expired= ${anu.result.expired}\n➸ API = https://lolhuman.herokuapp.com`
+              ikyy.sendMessage(from, teks, text, {quoted: mek})
+              break
        case 'bugreport':
               if (args.length < 1) return reply(`Ketik ${prefix}bugreport [fiturnya] [Error Nya Gimana]`) 
               teks = args.join(' ')
@@ -6072,27 +6097,13 @@ break
              break
 //------------------< Menunya Bang:v >-------------------
       case 'don':
-      gopeynya = 'https://telegra.ph/file/6776d58cca6fe933452bf.jpg'
-     teksnya = `GOPAY : SCAN
-
-DANA : 085271081629 an ISTIKOMAH
-
-QRIS : MINTA ADMIN`
-
-              ikyy.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya })
-              break
-             
+             reply(`minta own`)
+             break
       case 'infoig':
-             reply(`• Grub 1 : https://chat.whatsapp.com/BXAaVUjbMIiEO6zYJq0FxB
-• Grub 2 : https://chat.whatsapp.com/LrqE4Zp8CV6Cr64MdxaxTg
-• Grub 3 : https://chat.whatsapp.com/Kng32seZVPaCul6PYOYh1c
-• Grub 4 : https://chat.whatsapp.com/CBrhvnkUDhpKrpru4w7zci`)
+             reply(`minta own`)
              break
       case 'gc':
-      reply(`• Grub 1 : https://chat.whatsapp.com/BXAaVUjbMIiEO6zYJq0FxB
-• Grub 2 : https://chat.whatsapp.com/LrqE4Zp8CV6Cr64MdxaxTg
-• Grub 3 : https://chat.whatsapp.com/Kng32seZVPaCul6PYOYh1c
-• Grub 4 : https://chat.whatsapp.com/CBrhvnkUDhpKrpru4w7zci`)
+      reply(`minta own`)
       break
       
       
@@ -6131,7 +6142,10 @@ if (budy.includes("Numa")){
 
         }
        
-
+if (budy.includes("#menu")){
+verif (`SABAR! LOADING UNTUK MENAMPILKAN MENU`)
+		}
+        
 
 if (fs.existsSync(`./media/${from}.json`)) {
 	gelutSkuy = setGelud(`${from}`)
